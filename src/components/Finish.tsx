@@ -23,7 +23,7 @@ export default function Finish() {
 
         <p className="font-body text-race-light leading-relaxed mb-10 text-lg">
           You swam it. You rode it. You ran it. Now the most important part:{" "}
-          <span className="text-run font-body font-medium">AJ's smash burgers, n/a drinks (not sure if we mentioned it, but we're not drinking), and well-earned rest</span>{" "}
+          <span className="text-run font-body font-medium">AJ&apos;s smash burgers, n/a drinks (not sure if we mentioned it, but we&apos;re not drinking), and well-earned rest</span>{" "}
           on the grass at Log Boom Park. Bring a blanket and your appetite.
         </p>
 
