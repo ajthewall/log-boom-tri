@@ -31,7 +31,7 @@ export const LEGS = {
       "Return to T1 at the beach",
     ],
     garminCourseId: "SWIM_COURSE_ID",
-    gpxFile: null,
+    gpxFile: "/gpx/SWIM_COURSE.gpx",
     mapsLink: "https://maps.google.com/?q=Log+Boom+Park,+Kenmore,+WA",
   },
   bike: {
@@ -63,10 +63,10 @@ export const LEGS = {
     distance: "10 km",
     color: "run" as const,
     description:
-      "Fresh off the bike, head out on a 10 km out-and-back run along the Burke-Gilman Trail. The wide, paved trail runs counter-clockwise along the north shore of Lake Washington, offering stunning water views before you turn around at the 5 km mark and race back to the finish line.",
+      "Fresh off the bike, head out on a 10 km out-and-back run heading east on the Burke-Gilman Trail. The wide, paved path follows the shoreline away from the park, offering lake views as you make your way to the 5 km turnaround before returning west to the finish line.",
     details: [
       "Start: T2 at Log Boom Park",
-      "Head counter-clockwise (west) on Burke-Gilman Trail",
+      "Head east on the Burke-Gilman Trail",
       "Flat, paved trail along the north shore",
       "Turnaround at 5 km",
       "Finish: Log Boom Park — picnic awaits!",

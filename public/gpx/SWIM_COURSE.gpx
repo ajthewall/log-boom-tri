@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Log Boom Tri">
+  <trk>
+    <name>Swim Course</name>
+    <trkseg>
+      <trkpt lat="47.7554" lon="-122.2571"/>
+      <trkpt lat="47.7486" lon="-122.2575"/>
+      <trkpt lat="47.7554" lon="-122.2567"/>
+    </trkseg>
+  </trk>
+</gpx>
