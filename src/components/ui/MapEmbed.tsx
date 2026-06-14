@@ -1,7 +1,10 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useGpxStats } from "@/lib/useGpxStats";
 import ElevationStats from "./ElevationStats";
+
+const GpxMap = dynamic(() => import("./GpxMap"), { ssr: false });
 
 type LegColor = "swim" | "bike" | "run";
 
@@ -17,30 +20,27 @@ const bgColorMap: Record<LegColor, string> = {
   run: "bg-run/5 text-run",
 };
 
-const isPending = (courseId: string) => courseId.endsWith("_COURSE_ID");
-
 export default function MapEmbed({
-  garminCourseId,
   gpxFile,
   title,
   accentColor,
-  fallbackHref,
+  garminLink,
 }: {
-  garminCourseId: string;
   gpxFile?: string | null;
   title: string;
   accentColor: LegColor;
-  fallbackHref: string;
+  garminLink: string;
 }) {
   const { stats, loading } = useGpxStats(gpxFile ?? null);
-  const src = `https://connect.garmin.com/modern/course/${garminCourseId}/embed`;
 
   return (
     <div className="flex flex-col gap-2">
       <div
         className={`relative w-full rounded-xl overflow-hidden border-2 shadow-lg ${borderColorMap[accentColor]}`}
       >
-        {isPending(garminCourseId) ? (
+        {gpxFile ? (
+          <GpxMap gpxUrl={gpxFile} accentColor={accentColor} />
+        ) : (
           <div
             className={`w-full h-64 md:h-80 flex flex-col items-center justify-center gap-3 ${bgColorMap[accentColor]}`}
           >
@@ -48,19 +48,7 @@ export default function MapEmbed({
             <p className="text-sm font-display font-bold uppercase tracking-wider opacity-60">
               Course map coming soon
             </p>
-            <p className="text-xs opacity-40 font-body">
-              Garmin course not yet linked
-            </p>
           </div>
-        ) : (
-          <iframe
-            src={src}
-            title={title}
-            className="w-full h-64 md:h-80"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
         )}
       </div>
 
@@ -68,14 +56,17 @@ export default function MapEmbed({
         <ElevationStats stats={stats} loading={loading} accentColor={accentColor} />
       )}
 
-      <a
-        href={fallbackHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-race-muted hover:text-race-light text-xs font-body text-right transition-colors"
-      >
-        View on Garmin Connect →
-      </a>
+      {garminLink && (
+        <a
+          href={garminLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-race-muted hover:text-race-light text-xs font-body text-right transition-colors"
+          aria-label={title}
+        >
+          View on Garmin Connect →
+        </a>
+      )}
     </div>
   );
 }

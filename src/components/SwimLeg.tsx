@@ -37,10 +37,10 @@ export default function SwimLeg() {
 
           {/* Map */}
           <MapEmbed
-            src={leg.mapUrl}
+            gpxFile={leg.gpxFile}
             title="Swim route — Log Boom Park area"
             accentColor={leg.color}
-            fallbackHref={leg.mapsLink}
+            garminLink={leg.mapsLink}
           />
         </div>
       </div>

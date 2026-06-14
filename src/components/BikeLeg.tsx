@@ -37,11 +37,10 @@ export default function BikeLeg() {
 
           {/* Map */}
           <MapEmbed
-            garminCourseId={leg.garminCourseId}
             gpxFile={leg.gpxFile}
             title="Bike route — Lake Washington Loop"
             accentColor={leg.color}
-            fallbackHref={leg.mapsLink}
+            garminLink={leg.mapsLink}
           />
         </div>
       </div>
