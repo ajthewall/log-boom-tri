@@ -37,7 +37,8 @@ export default function RunLeg() {
 
           {/* Map */}
           <MapEmbed
-            src={leg.mapUrl}
+            garminCourseId={leg.garminCourseId}
+            gpxFile={leg.gpxFile}
             title="Run route — Burke-Gilman Trail"
             accentColor={leg.color}
             fallbackHref={leg.mapsLink}

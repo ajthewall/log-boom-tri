@@ -30,8 +30,8 @@ export const LEGS = {
       "Lifeguards and kayakers on course",
       "Return to T1 at the beach",
     ],
-    mapUrl:
-      "https://www.openstreetmap.org/export/embed.html?bbox=-122.2750%2C47.7480%2C-122.2380%2C47.7700&layer=mapnik",
+    garminCourseId: "SWIM_COURSE_ID",
+    gpxFile: null,
     mapsLink: "https://maps.google.com/?q=Log+Boom+Park,+Kenmore,+WA",
   },
   bike: {
@@ -52,9 +52,9 @@ export const LEGS = {
       "North through UW, Matthews Beach, Sand Point",
       "Finish: T2 at Log Boom Park",
     ],
-    mapUrl:
-      "https://www.openstreetmap.org/export/embed.html?bbox=-122.3600%2C47.5200%2C-122.1500%2C47.7900&layer=mapnik",
-    mapsLink: "https://maps.google.com/?q=Lake+Washington+Loop,+Kenmore,+WA",
+    garminCourseId: "475420265",
+    gpxFile: "/gpx/COURSE_475420265.gpx",
+    mapsLink: "https://connect.garmin.com/modern/course/475420265",
   },
   run: {
     number: "03",
@@ -71,8 +71,8 @@ export const LEGS = {
       "Turnaround at 5 km",
       "Finish: Log Boom Park — picnic awaits!",
     ],
-    mapUrl:
-      "https://www.openstreetmap.org/export/embed.html?bbox=-122.3100%2C47.7200%2C-122.2200%2C47.7800&layer=mapnik",
-    mapsLink: "https://maps.google.com/?q=Burke-Gilman+Trail,+Kenmore,+WA",
+    garminCourseId: "475422307",
+    gpxFile: "/gpx/COURSE_475422307.gpx",
+    mapsLink: "https://connect.garmin.com/modern/course/475422307",
   },
 };
