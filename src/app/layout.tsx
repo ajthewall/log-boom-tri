@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 
 const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],

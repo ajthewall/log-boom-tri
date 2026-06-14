@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import "leaflet/dist/leaflet.css";
 import type { Map as LeafletMap } from "leaflet";
 
 type LegColor = "swim" | "bike" | "run";
@@ -35,10 +34,12 @@ export default function GpxMap({
     if (!containerRef.current || mapRef.current) return;
 
     const color = lineColorMap[accentColor];
+    let cancelled = false;
     let map: LeafletMap;
 
     const init = async () => {
       const L = (await import("leaflet")).default;
+      if (cancelled) return;
 
       map = L.map(containerRef.current!, { scrollWheelZoom: false });
       mapRef.current = map;
@@ -81,6 +82,7 @@ export default function GpxMap({
     init().catch(console.error);
 
     return () => {
+      cancelled = true;
       map?.remove();
       mapRef.current = null;
     };
