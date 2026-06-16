@@ -3,9 +3,9 @@
   <trk>
     <name>Swim Course</name>
     <trkseg>
-      <trkpt lat="47.7554" lon="-122.2571"/>
-      <trkpt lat="47.7486" lon="-122.2575"/>
-      <trkpt lat="47.7554" lon="-122.2567"/>
+      <trkpt lat="47.7554" lon="-122.2700"/>
+      <trkpt lat="47.7486" lon="-122.2705"/>
+      <trkpt lat="47.7554" lon="-122.2695"/>
     </trkseg>
   </trk>
 </gpx>
