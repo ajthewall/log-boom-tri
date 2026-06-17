@@ -22,7 +22,7 @@ export const LEGS = {
     distance: "1.5 km",
     color: "swim" as const,
     description:
-      "Kick off your race in the calm, flat waters of Lake Washington at Log Boom Park's sandy beach. This 1.5 km open water swim follows a looping course along the shoreline, returning to the T1 transition zone on the beach.",
+      "Kick off your race in the calm, flat waters of Lake Washington at Log Boom Park's sandy beach. This 1.5 km open water, zero elevation swim follows a looping course along the shoreline, returning to the T1 transition zone on the beach.",
     details: [
       "Start: Log Boom Park beach",
       "Open water, completely flat",
