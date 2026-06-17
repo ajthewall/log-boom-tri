@@ -19,7 +19,7 @@ export default function Hero() {
 
         {/* Title */}
         <h1 className="font-display font-extrabold text-7xl sm:text-8xl md:text-9xl uppercase tracking-tight leading-none text-race-light">
-          Log Boom
+          Solstice Log Boom
           <br />
           <span className="text-swim">Tri</span>
         </h1>

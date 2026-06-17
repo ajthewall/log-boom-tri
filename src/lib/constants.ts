@@ -1,17 +1,16 @@
 export const EVENT = {
-  name: "Log Boom Tri",
+  name: "Solstice Log Boom Tri",
   date: "Sunday, June 21, 2026",
   location: "Log Boom Park, Kenmore WA",
   tagline: "Swim. Bike. Run. Picnic.",
 };
 
 export const SCHEDULE = [
-  { time: "TBD", event: "Check-in & Transition Setup" },
-  { time: "TBD", event: "Race Briefing" },
-  { time: "TBD", event: "Swim Start (T1)" },
-  { time: "TBD", event: "Bike Start (T2)" },
-  { time: "TBD", event: "Run Start (T3)" },
-  { time: "TBD", event: "Finish Line & Picnic" },
+  { time: "10:00 AM", event: "Check-in, Race Briefing & Transition Setup" },
+  { time: "10:30 AM", event: "Race Start / Swim (T1)" },
+  { time: "—", event: "Bike (T2) — bikes locked back in cars between legs" },
+  { time: "—", event: "Run (T3)" },
+  { time: "—", event: "Finish Line & Picnic" },
 ];
 
 export const LEGS = {

@@ -11,7 +11,7 @@ export default function StickyNav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-race-dark/90 backdrop-blur-sm border-b border-white/5">
       <div className="max-w-6xl mx-auto px-4 h-12 flex items-center justify-between gap-4">
         <span className="font-display font-bold text-sm uppercase tracking-widest text-race-light whitespace-nowrap">
-          Log Boom Tri
+          Solstice Log Boom Tri
         </span>
         <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
           {links.map((link) => (

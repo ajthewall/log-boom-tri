@@ -16,11 +16,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Log Boom Tri — June 21, 2026",
+  title: "Solstice Log Boom Tri — June 21, 2026",
   description:
     "A mini triathlon at Log Boom Park, Kenmore WA. Swim 1.5km, bike ~43km on the Lake Washington Loop, run 10km on the Burke-Gilman Trail. Finish with a picnic.",
   openGraph: {
-    title: "Log Boom Tri",
+    title: "Solstice Log Boom Tri",
     description: "Swim. Bike. Run. Picnic. June 21, 2026 — Log Boom Park, Kenmore WA",
     type: "website",
   },
