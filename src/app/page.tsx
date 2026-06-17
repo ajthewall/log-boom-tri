@@ -5,6 +5,7 @@ import SwimLeg from "@/components/SwimLeg";
 import BikeLeg from "@/components/BikeLeg";
 import RunLeg from "@/components/RunLeg";
 import Finish from "@/components/Finish";
+import Register from "@/components/Register";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <BikeLeg />
         <RunLeg />
         <Finish />
+        <Register />
       </main>
     </>
   );

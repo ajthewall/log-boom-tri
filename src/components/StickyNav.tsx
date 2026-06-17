@@ -1,10 +1,13 @@
+type NavLink = { href: string; label: string; cta?: boolean };
+
 export default function StickyNav() {
-  const links = [
+  const links: NavLink[] = [
     { href: "#schedule", label: "Schedule" },
     { href: "#swim", label: "Swim" },
     { href: "#bike", label: "Bike" },
     { href: "#run", label: "Run" },
     { href: "#finish", label: "Finish" },
+    { href: "#register", label: "Register", cta: true },
   ];
 
   return (
@@ -18,7 +21,11 @@ export default function StickyNav() {
             <a
               key={link.href}
               href={link.href}
-              className="px-3 py-1 rounded text-xs font-display font-bold uppercase tracking-wider text-race-muted hover:text-race-light hover:bg-white/5 transition-colors whitespace-nowrap"
+              className={
+                link.cta
+                  ? "px-3 py-1 rounded text-xs font-display font-bold uppercase tracking-wider whitespace-nowrap bg-run text-white hover:bg-run-dark transition-colors ml-1"
+                  : "px-3 py-1 rounded text-xs font-display font-bold uppercase tracking-wider text-race-muted hover:text-race-light hover:bg-white/5 transition-colors whitespace-nowrap"
+              }
             >
               {link.label}
             </a>
